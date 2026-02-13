@@ -18,13 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://www.google.com/')
-
 WebUI.maximizeWindow()
 WebUI.waitForPageLoad(10)
 
-String title = WebUI.getWindowTitle()
-WebUI.verifyMatch(title,'Google',true)
+String title1 = WebUI.getWindowTitle()
+WebUI.verifyMatch(title1,'Google',true)
 
 WebUI.closeBrowser()
